@@ -40,7 +40,7 @@
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <div class="main" id="section0"></div>
 </head>
 <body>
@@ -77,7 +77,10 @@
 
 
 
-<div  id="header-container">
+<div data-aos="fade-zoom-in"
+data-aos-easing="ease-in-back"
+data-aos-offset="0" data-aos-duration="1000"
+ id="header-container">
     <header  id="header">
         <svg id="sun" preserveAspectRatio="none" viewBox="0 0 2294 2294">
             <path 
@@ -93,7 +96,7 @@
 
            <!-- <img  class="img-size" id="avatar" alt="Avatar" loading="lazy" src="http://i.stack.imgur.com/SBv4T.gif"> -->
 
-          <img  class="img-size" id="avatar" alt="Avatar" loading="lazy" src="assets/shakeel_pic.png">
+          <img data-aos="fade-up" data-aos-duration="5000" class="img-size" id="avatar" alt="Avatar" loading="lazy" src="assets/shakeel_pic.png">
           
          
           <!-- <p id="title" class="t01 line-1 anim-typewriter" role="heading" aria-level="1" > -->
@@ -102,7 +105,7 @@
               <!-- <img  class="img-size-avatar-body" src="assets/babyboss2.png"> -->
               
             </p>
-            <b>Hi, I'm Shakeel.</b>
+            <b data-aos="zoom-in-up">Hi, I'm Shakeel.</b>
 
       </div>
 
@@ -140,18 +143,18 @@
 
  
 
-<div  data-aos="zoom-in-up" class="text-center">
+<div  class="text-center">
   <div class="middle-btn container-fluid">
     <div class="row">
   
-      <div class="project flex-container col-lg-6 col-6">
+      <div data-aos="fade-right" data-aos-duration="2000" class="project flex-container col-lg-6 col-6">
         <a href="#bio" role="button" aria-pressed="true">
           <i class="menu_icon fas fa-arrow-down"></i>
           <p class='menu_text'>SEE MY PROJECTS </p>
         </a>
       </div>
  
-        <div class="linkedin flex-container col-lg-6 col-6">
+        <div data-aos="fade-left" data-aos-duration="2000" class="linkedin flex-container col-lg-6 col-6">
           <a href="https://www.linkedin.com/in/shakeel-shaik136/"  role="button" aria-pressed="true">
               <i class="menu_icon fab fa-linkedin"></i>
               <p class='menu_text'>SAY HI ON LinkedIn</p>
@@ -207,15 +210,18 @@
   
   <section id="bio">
 
-    <div class="t0 col-lg-12 col-12" >
-
-          <an-text center>I'm a full stack java developer from Hyderabad. <br> I love building new exciting things.</an-text>     
+    <div class="t0 col-lg-12 col-12  " >
+      <an-text center>I'm a full stack java developer from Hyderabad. </an-text> <br>
+        <h4 center>I love building new exciting things.</h4> 
+          <!-- <p>I'm a full stack developer from Hyderabad. </p> 
+          <p>           I love building new exciting things.</p>   
+     -->
+    
 
 </div>
   </section>
 
-
-
+ 
  
 
   <div class="text-center">
@@ -227,7 +233,7 @@
 
    <!-- projectOne  -->
 
-   <section id="projectOne" class="mainCard ">
+   <section data-aos="fade-left" data-aos-duration="2000" id="projectOne" class="mainCard ">
 
     <div class="row" >
     
@@ -258,7 +264,7 @@
 
    <!-- projectTwo  -->
  
-   <section id="projectTwo" class="mainCard ">
+   <section data-aos="fade-right" data-aos-duration="2000" id="projectTwo" class="mainCard ">
 
     <div class="row" >
     
@@ -291,7 +297,7 @@
 
    <!-- projectThree  -->
 
-   <section id="projectThree" class="mainCard ">
+   <section data-aos="fade-left" data-aos-duration="2000" id="projectThree" class="mainCard ">
 
     <div class="row" >
     
@@ -338,7 +344,7 @@
 
  <!--footer starts from here-->
 
-<section id="footer">
+<section  data-aos="fade-up" data-aos-duration="2000"  id="footer">
 
   
       <!--footer starts from here-->
@@ -391,8 +397,10 @@
 
 
 
-
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
 </body>
